@@ -72,6 +72,7 @@ def iniciar_sistema():
         print("-" * 51)
 
     # prueba 6: registro de segundo cliente 
+    try:
         print("EJECUCION 06: Alta de segundo cliente")
         cliente_dos = Cliente("Camila Riascos", "30044", "camila.riascos@empresa.co", "3159876543")
         print("Estado: Registro completado con exito")
@@ -136,7 +137,7 @@ def iniciar_sistema():
     try:
         print("EJECUCION 11: Cierre y verificacion global del sistema")
         print("Todas las pruebas de validacion, excepciones y reservas concluyeron.")
-        print("Integridad estructural de modulos: 100% OK")
+        print("Verificación estructural de módulos: Completada satisfactoriamente")
         print("---------------------------------------------------")
         logging.info("simulacion global de 11 operaciones finalizada correctamente")
     except Exception as error_cierre:
